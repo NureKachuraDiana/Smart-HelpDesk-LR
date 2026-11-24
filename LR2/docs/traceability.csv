@@ -1,0 +1,9 @@
+requirement,implementation,test,status
+FR-01,Issue creation,Create issue tests,Implemented
+FR-02,Issue listing and details,List and detail tests,Implemented
+FR-03,Issue update,Issue PATCH tests,Implemented
+FR-04,Status transitions,Status transition tests,Implemented
+FR-05,Issue filtering,Combined filter tests,Implemented
+FR-06,Issue assignment,Assignment tests,Implemented
+FR-07,Comments,Comment tests,Implemented
+FR-08,AI recommendations,Not implemented in Lab 2,Deferred to Lab 4
