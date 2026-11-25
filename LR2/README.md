@@ -1,8 +1,9 @@
-# Smart HelpDesk — Lab 2
 
-A small REST API service for managing issues and comments.
+# Smart HelpDesk — Лабораторна робота №2
 
-## Technology stack
+Невеликий REST API-сервіс для керування зверненнями та коментарями.
+
+## Технологічний стек
 
 - Python 3.13
 - FastAPI
@@ -10,75 +11,75 @@ A small REST API service for managing issues and comments.
 - Pytest
 - Ruff
 
-## Project structure
+## Структура проєкту
 
 ```text
-app/       Application source code
-tests/     Automated tests
-data/      Local SQLite database
-docs/      Lab 2 documentation
-.agents/   Project Skills
+app/       Вихідний код застосунку
+tests/     Автоматизовані тести
+data/      Локальна база даних SQLite
+docs/      Документація лабораторної роботи №2
+.agents/   Навички (Project Skills) проєкту
 ```
 
-## Installation
+## Встановлення
 
-Create and activate a virtual environment:
+Створіть та активуйте віртуальне середовище:
 
 ```powershell
 python -m venv .venv
 .venv\Scripts\Activate.ps1
 ```
 
-Install dependencies:
+Встановіть необхідні залежності:
 
 ```powershell
 pip install -r requirements-lock.txt
 ```
 
-## Run the application
+## Запуск застосунку
 
 ```powershell
 uvicorn app.main:app --reload
 ```
 
-The API is available at:
+API буде доступний за адресами:
 
 - http://127.0.0.1:8000
 - Swagger UI: http://127.0.0.1:8000/docs
 
-## Run tests
+## Запуск тестів
 
 ```powershell
 pytest -q
 ```
 
-## Run Ruff
+## Перевірка коду за допомогою Ruff
 
 ```powershell
 ruff check app tests
 ```
 
-## Main functionality
+## Основні функціональні можливості
 
-- Create and list issues
-- Retrieve an issue by ID
-- Update issue fields
-- Change issue status
-- Filter issues by status and priority
-- Assign and unassign users
-- Create and retrieve comments
-- Store data in SQLite
+- Створення та перегляд списку звернень.
+- Отримання інформації про звернення за його ідентифікатором.
+- Редагування полів звернення.
+- Зміна статусу звернення.
+- Фільтрація звернень за статусом і пріоритетом.
+- Призначення та зняття відповідальних виконавців.
+- Створення та перегляд коментарів.
+- Збереження даних у SQLite.
 
-## Verification
+## Результати перевірки
 
-Latest local verification:
+Результати останньої локальної перевірки:
 
-- Ruff: All checks passed
-- Pytest: 42 passed
-- One non-fatal Starlette deprecation warning
+- **Ruff:** усі перевірки пройдено успішно.
+- **Pytest:** 42 тести пройдено успішно.
+- **Starlette:** одне попередження про застарілу функціональність, яке не впливає на роботу застосунку.
 
-Standalone filtering function checks also passed.
+Окремі перевірки функції фільтрації також завершилися успішно.
 
-## Scope limitations
+## Обмеження реалізації
 
-AI-based issue recommendations (FR-08) are not implemented in Lab 2 and are deferred to Lab 4.
+Рекомендації щодо звернень на основі штучного інтелекту (FR-08) не реалізовані в лабораторній роботі №2. Їхню реалізацію заплановано в межах лабораторної роботи №4.
