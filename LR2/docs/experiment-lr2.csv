@@ -1,0 +1,4 @@
+task,executor,ai_used,skill_active,time_minutes,first_test_result,edits,tool_model
+"Status predicate,Student,Yes,No,NOT_RECORDED,Passed,Created with AI assistance; standalone function checks passed,ChatGPT"
+"Priority predicate,Student,Yes,No,NOT_RECORDED,Passed,Created with AI assistance; standalone function checks passed,ChatGPT"
+Empty issue list test,Student,No,No,3,Passed,Added a test for an empty issue list without AI assistance,No AI

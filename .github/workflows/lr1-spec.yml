@@ -17,4 +17,4 @@ jobs:
         with:
           python-version: '3.12'
       - name: Check specification
-        run: python scripts/check_spec.py
+        run: python LR1/scripts/check_spec.py
